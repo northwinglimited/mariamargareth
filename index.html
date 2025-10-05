@@ -90,7 +90,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero hero-section" id="home" style="position: relative; background: linear-gradient(rgba(0, 86, 179, 0.3), rgba(0, 51, 102, 0.3)), url('/images/children_imgupscaler.ai_v1(Fast)_2K.png') center/cover no-repeat; min-height: 80vh; display: flex; align-items: center;">
+    <section class="hero hero-section" id="home" style="background: linear-gradient(rgba(0, 86, 179, 0.5), rgba(0, 86, 102, 0.2)), url('/images/children_imgupscaler.ai_v1(Fast)_2K.png') center/cover no-repeat; width: auto; height:auto;">
         <!-- navigation menu and donate -->
         <div class="hero-slider">
             <!-- Slide 1 -->
@@ -99,6 +99,12 @@
                     <div class="hero-content">
                         <h1 class="fade-in delay-1" style="color: var(--white); text-align: center;">
                             Empowering Communities Through Education</h1>
+                        <!-- donate button -->
+                        <div class="hero-buttons">
+                            <a href="#donate" class="btn btn-primary">Donate Now</a>
+                            <a href="#get-involved" class="btn btn-secondary">Get Involved</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -109,55 +115,40 @@
     </section>
 
     <!-- About Section -->
-    <section class="about section-padding" id="about">
+    <section class="about section-padding" id="about" style="background: url('/images/section-background.png') center/cover no-repeat; width: auto; height:auto;">
         <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">Who We Are</span>
+                <h3 class="section-subtitle">Who We Are</h3>
                 <h2>About Maria Margareth Foundation</h2>
-                <div class="underline"></div>
             </div>
             <div class="about-content">
-                <div class="about-text slide-in-left">
-                    <h3>Transforming Lives Through Education</h3>
-                    <p>Maria Margareth Foundation Tanzania is a legally registered nonprofit organization committed to creating sustainable change through education, healthcare, and community development initiatives. Since our establishment, we have been working tirelessly to empower vulnerable communities across Tanzania.</p>
-                    
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Quality Education</h4>
-                                <p>Providing access to quality education for children in underserved communities.</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-heartbeat"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Healthcare Access</h4>
-                                <p>Improving healthcare access and awareness in rural communities.</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-hands-helping"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Community Development</h4>
-                                <p>Empowering communities through sustainable development programs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <a href="#" class="btn btn-primary">Learn More About Us</a>
-                    
-                    <h3>Our Mission</h3>
-                    <p>We aim to reach the poor, marginalized, and at-risk groups through community driven, voluntary self-help initiatives. We don't offer handouts, we offer empowerment.</p>
+                <div class="about-text">
+                    <p> <strong>Maria Margareth Foundation Tanzania</strong> is a legally registered nonprofit organization committed to creating sustainable change through education, healthcare, and community development initiatives. Since our establishment, we have been working tirelessly to empower vulnerable communities across Tanzania.</p>
+                    <p>We serve both rural and urban communities by working closely with local leaders, stakeholders, and volunteers to co-create solutions that address root challenges. Our approach is driven by dignity, respect, and the pursuit of long-term impact.</p>
                 </div>
-                <div class="about-image slide-in">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Students learning">
+            </div>
+            
+            <!-- Vision & Mission Cards -->
+            <div class="vision-mission-cards">
+                <!-- Vision Card -->
+                <div class="card vision-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p class="highlight">"Quality education for a better life for everyone."</p>
+                    <p>This vision inspires our work every day. To us, education is a powerful tool for equality, justice, and sustainable growth.</p>
+                </div>
+                
+                <!-- Mission Card -->
+                <div class="card mission-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>We aim to reach the poor, marginalized, and at-risk groups through community driven, voluntary self-help initiatives.</p>
+                    <p class="highlight">We don't offer handouts, we offer empowerment.</p>
+                    <p>By increasing access to knowledge, resources, and opportunities, we enable people to lift themselves out of poverty.</p>
                 </div>
             </div>
         </div>
@@ -168,7 +159,6 @@
         <div class="container">
             <div class="section-header">
                 <h2>Our Programs</h2>
-                <div class="underline"></div>
             </div>
             <div class="programs-grid">
                 <div class="program-card scale-in">

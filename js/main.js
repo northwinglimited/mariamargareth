@@ -93,7 +93,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Sticky Header
-const header = document.querySelector('.header');
+const header = document.querySelector('.main-navigation');
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {

@@ -146,6 +146,7 @@ body {
 .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-2px);
+    color: var(--white) !important;
 }
 
 .btn-secondary:hover:before {
@@ -1686,7 +1687,7 @@ section {
 .btn-secondary:hover {
     background-color: #e68a00;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 
 .btn-outline {

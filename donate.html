@@ -101,70 +101,91 @@
 
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero hero-section" id="home" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://waziri123.github.io/ngo/images/IMG-20250925-WA0052.jpg') center/cover no-repeat; width: auto; height:auto;">
-        <!-- navigation menu and donate -->
-        <div class="hero-slider">
-            <!-- Slide 1 -->
-            <div class="hero-slide active">
-                <div class="container">
-                    <div class="hero-content">
-                        <h1 class="fade-in delay-1" style="color: var(--white); text-align: center;">
-                            Who We Are!</h1>
+   <!-- Donation Form Section -->
+    <section class="volunteer-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-info">
+                    <h2>Support Our Cause</h2>
+                    <p>Your generous donation will help us continue our mission to empower communities through education and sustainable development.</p>
+                    <div class="benefits">
+                        <h3>How Your Donation Helps</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Provide school supplies for underprivileged children</li>
+                            <li><i class="fas fa-check-circle"></i> Support educational programs and scholarships</li>
+                            <li><i class="fas fa-check-circle"></i> Fund community development initiatives</li>
+                            <li><i class="fas fa-check-circle"></i> Improve access to clean water and sanitation</li>
+                            <li><i class="fas fa-check-circle"></i> Support healthcare and nutrition programs</li>
+                        </ul>
                     </div>
                 </div>
+                
+                <form id="donationForm" class="volunteer-form">
+                    <h3>Make a Donation</h3>
+                    
+                    <div class="form-group">
+                        <label for="donationAmount">Donation Amount (TZS) <span class="required">*</span></label>
+                        <div class="donation-amounts">
+                            <button type="button" class="amount-btn" data-amount="10000">10,000 TZS</button>
+                            <button type="button" class="amount-btn" data-amount="50000">50,000 TZS</button>
+                            <button type="button" class="amount-btn" data-amount="100000">100,000 TZS</button>
+                            <button type="button" class="amount-btn" data-amount="200000">200,000 TZS</button>
+                        </div>
+                        <input type="number" id="donationAmount" name="donationAmount" placeholder="Enter custom amount" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="donationType">Donation Type <span class="required">*</span></label>
+                        <select id="donationType" name="donationType" required>
+                            <option value="">Select donation type</option>
+                            <option value="one-time">One-time Donation</option>
+                            <option value="monthly">Monthly Donation</option>
+                            <option value="quarterly">Quarterly Donation</option>
+                            <option value="yearly">Yearly Donation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Add a personal message or note with your donation"></textarea>
+                    </div>
+                    
+                    <div class="form-group terms">
+                        <label class="checkbox-container">I would like to receive updates about how my donation is being used
+                            <input type="checkbox" name="receiveUpdates" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <p class="small">By donating, you agree to our <a href="#">privacy policy</a> and <a href="#">terms of service</a>.</p>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Donate Now</button>
+              
+                </form>
             </div>
-            <!-- Additional slides can be added here -->
         </div>
     </section>
 
-   <!-- About Section -->
-   <section class="about section-padding" id="about" style="background: url('https://waziri123.github.io/ngo/images/section-background.png') center/cover no-repeat; width: auto; height:auto;">
-    <div class="container">
-        <div class="section-header">
-            <h3 class="section-subtitle scale-in">Who We Are</h3>
-            <h2 class="scale-in">About Maria Margareth Foundation</h2>
-        </div>
-        <div class="about-content">
-            <div class="about-text scale-in">
-                <p> <strong>Maria Margareth Foundation Tanzania</strong> is a legally registered nonprofit organization committed to creating sustainable change through education, healthcare, and community development initiatives. Since our establishment, we have been working tirelessly to empower vulnerable communities across Tanzania.</p>
-                <p>We serve both rural and urban communities by working closely with local leaders, stakeholders, and volunteers to co-create solutions that address root challenges. Our approach is driven by dignity, respect, and the pursuit of long-term impact.</p>
-            </div>
-        </div>
-        
-        <!-- Vision & Mission Cards -->
-        <div class="vision-mission-cards">
-            <!-- Vision Card -->
-            <div class="card vision-card scale-in">
-                <div class="card-icon">
-                    <i class="fas fa-eye"></i>
-                </div>
-                <h3>Our Vision</h3>
-                <p class="highlight">"Quality education for a better life for everyone."</p>
-                <p>This vision inspires our work every day. To us, education is a powerful tool for equality, justice, and sustainable growth.</p>
-            </div>
-            
-            <!-- Mission Card -->
-            <div class="card mission-card scale-in">
-                <div class="card-icon">
-                    <i class="fas fa-bullseye"></i>
-                </div>
-                <h3>Our Mission</h3>
-                <p class="highlight">We aim to reach the poor, marginalized, and at-risk groups through community driven, voluntary self-help initiatives.</p>
-                <p>By increasing access to knowledge, resources, and opportunities, we enable people to lift themselves out of poverty.</p>
-            </div>
-            </div>
-            <div class="section-header" style="padding-top: 30px; margin-bottom: 30px;">
-                <h2 class="scale-in">Our Objectives</h2>
-            </div>
-            <p style="margin: auto; line-height: 2; text-align: justify;">Our core objectives reflect our unwavering commitment to sustainable development, equity, and justice, as we strive to create lasting change in the lives of the poor and marginalized. We aim to promote and defend human rights for all individuals, regardless of age, gender, or background, while advancing sexual and reproductive health rights, particularly for women, youth, and vulnerable populations. Through our programs, we equip women and young people with entrepreneurship and vocational skills that empower them to achieve financial independence and build resilient communities.</p>
-
-            <p style="margin: auto; line-height: 2; text-align: justify;">We actively support both national and international volunteering programs that foster solidarity, knowledge-sharing, and cross-cultural collaboration. Recognizing the importance of informed decision-making, we deliver comprehensive life skills education tailored to the needs of vulnerable groups. We also work to establish and promote education for sustainable development, especially in underserved regions, ensuring access to quality learning opportunities. Our health initiatives focus on building strong partnerships with community stakeholders to deliver sustainable health services.</p>
-
-            <p style="margin: auto; line-height: 2; text-align: justify;">We are committed to encouraging inclusive development through socio-economic and cultural empowerment, backed by impactful research and consultancy to guide evidence-based practices. Furthermore, we provide essential nutrition support and education to malnourished and at-risk children, and use sports and recreational activities as powerful tools to promote health, unity, and positive social interaction across communities. Our work also includes promoting community-based healthcare, environmental conservation, and tourism policy advocacy.</p>
-        </div>
-    </div>
-</section>
 
     <!-- Footer -->
     <footer class="footer">

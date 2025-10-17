@@ -101,70 +101,118 @@
 
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero hero-section" id="home" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://waziri123.github.io/ngo/images/IMG-20250925-WA0052.jpg') center/cover no-repeat; width: auto; height:auto;">
-        <!-- navigation menu and donate -->
-        <div class="hero-slider">
-            <!-- Slide 1 -->
-            <div class="hero-slide active">
-                <div class="container">
-                    <div class="hero-content">
-                        <h1 class="fade-in delay-1" style="color: var(--white); text-align: center;">
-                            Who We Are!</h1>
+   <!-- Volunteer Form Section -->
+    <section class="volunteer-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-info">
+                    <h2>Join Our Volunteer Team</h2>
+                    <p>Fill out the form below to apply as a volunteer. Our team will review your application and get back to you shortly.</p>
+                    <div class="benefits">
+                        <h3>Why Volunteer With Us?</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Make a real difference in people's lives</li>
+                            <li><i class="fas fa-check-circle"></i> Gain valuable experience and skills</li>
+                            <li><i class="fas fa-check-circle"></i> Join a community of like-minded individuals</li>
+                            <li><i class="fas fa-check-circle"></i> Receive a certificate of appreciation</li>
+                            <li><i class="fas fa-check-circle"></i> Flexible scheduling options</li>
+                        </ul>
                     </div>
                 </div>
+                
+                <form id="volunteerForm" class="volunteer-form">
+                    <h3>Volunteer Application</h3>
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="occupation">Occupation/Profession</label>
+                        <input type="text" id="occupation" name="occupation">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interests">Areas of Interest <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-container">Teaching
+                                <input type="checkbox" name="interests" value="teaching">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container">Community Work
+                                <input type="checkbox" name="interests" value="community">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container">Tech Support
+                                <input type="checkbox" name="interests" value="tech">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container">Mentorship
+                                <input type="checkbox" name="interests" value="mentorship">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container">Creative Arts
+                                <input type="checkbox" name="interests" value="arts">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container">Fundraising
+                                <input type="checkbox" name="interests" value="fundraising">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="availability">Availability <span class="required">*</span></label>
+                        <select id="availability" name="availability" required>
+                            <option value="">Select your availability</option>
+                            <option value="weekdays">Weekdays</option>
+                            <option value="weekends">Weekends</option>
+                            <option value="evenings">Evenings</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">Previous Volunteer Experience (if any)</label>
+                        <textarea id="experience" name="experience" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="skills">Skills and Qualifications</label>
+                        <textarea id="skills" name="skills" rows="3" placeholder="List any relevant skills, certifications, or qualifications"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reference">Reference (Name and Contact)</label>
+                        <input type="text" id="reference" name="reference">
+                    </div>
+                    
+                    <div class="form-group terms">
+                        <label class="checkbox-container">I agree to the terms and conditions
+                            <input type="checkbox" name="terms" required>
+                            <span class="checkmark"></span>
+                        </label>
+                        <p class="small">By submitting this form, you agree to our <a href="#">privacy policy</a> and <a href="#">terms of service</a>.</p>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+                </form>
             </div>
-            <!-- Additional slides can be added here -->
         </div>
     </section>
 
-   <!-- About Section -->
-   <section class="about section-padding" id="about" style="background: url('https://waziri123.github.io/ngo/images/section-background.png') center/cover no-repeat; width: auto; height:auto;">
-    <div class="container">
-        <div class="section-header">
-            <h3 class="section-subtitle scale-in">Who We Are</h3>
-            <h2 class="scale-in">About Maria Margareth Foundation</h2>
-        </div>
-        <div class="about-content">
-            <div class="about-text scale-in">
-                <p> <strong>Maria Margareth Foundation Tanzania</strong> is a legally registered nonprofit organization committed to creating sustainable change through education, healthcare, and community development initiatives. Since our establishment, we have been working tirelessly to empower vulnerable communities across Tanzania.</p>
-                <p>We serve both rural and urban communities by working closely with local leaders, stakeholders, and volunteers to co-create solutions that address root challenges. Our approach is driven by dignity, respect, and the pursuit of long-term impact.</p>
-            </div>
-        </div>
-        
-        <!-- Vision & Mission Cards -->
-        <div class="vision-mission-cards">
-            <!-- Vision Card -->
-            <div class="card vision-card scale-in">
-                <div class="card-icon">
-                    <i class="fas fa-eye"></i>
-                </div>
-                <h3>Our Vision</h3>
-                <p class="highlight">"Quality education for a better life for everyone."</p>
-                <p>This vision inspires our work every day. To us, education is a powerful tool for equality, justice, and sustainable growth.</p>
-            </div>
-            
-            <!-- Mission Card -->
-            <div class="card mission-card scale-in">
-                <div class="card-icon">
-                    <i class="fas fa-bullseye"></i>
-                </div>
-                <h3>Our Mission</h3>
-                <p class="highlight">We aim to reach the poor, marginalized, and at-risk groups through community driven, voluntary self-help initiatives.</p>
-                <p>By increasing access to knowledge, resources, and opportunities, we enable people to lift themselves out of poverty.</p>
-            </div>
-            </div>
-            <div class="section-header" style="padding-top: 30px; margin-bottom: 30px;">
-                <h2 class="scale-in">Our Objectives</h2>
-            </div>
-            <p style="margin: auto; line-height: 2; text-align: justify;">Our core objectives reflect our unwavering commitment to sustainable development, equity, and justice, as we strive to create lasting change in the lives of the poor and marginalized. We aim to promote and defend human rights for all individuals, regardless of age, gender, or background, while advancing sexual and reproductive health rights, particularly for women, youth, and vulnerable populations. Through our programs, we equip women and young people with entrepreneurship and vocational skills that empower them to achieve financial independence and build resilient communities.</p>
-
-            <p style="margin: auto; line-height: 2; text-align: justify;">We actively support both national and international volunteering programs that foster solidarity, knowledge-sharing, and cross-cultural collaboration. Recognizing the importance of informed decision-making, we deliver comprehensive life skills education tailored to the needs of vulnerable groups. We also work to establish and promote education for sustainable development, especially in underserved regions, ensuring access to quality learning opportunities. Our health initiatives focus on building strong partnerships with community stakeholders to deliver sustainable health services.</p>
-
-            <p style="margin: auto; line-height: 2; text-align: justify;">We are committed to encouraging inclusive development through socio-economic and cultural empowerment, backed by impactful research and consultancy to guide evidence-based practices. Furthermore, we provide essential nutrition support and education to malnourished and at-risk children, and use sports and recreational activities as powerful tools to promote health, unity, and positive social interaction across communities. Our work also includes promoting community-based healthcare, environmental conservation, and tourism policy advocacy.</p>
-        </div>
-    </div>
-</section>
 
     <!-- Footer -->
     <footer class="footer">
